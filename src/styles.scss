@@ -1,0 +1,302 @@
+// #####CSS RESET#####
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+// ####CSS MAIN CLASSES####
+
+.page-wrapper-ultimate { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.frame-209 {
+  display: inline-flex;
+  padding: 104px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px 0px 0px 10px;
+  background: var(--gray-600, #FAFAFA);
+}
+
+.frame-209-dark {
+  background: var(--dark-purple-100, #130F1C); 
+}
+
+.frame-204 {
+  width: 428px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  row-gap: 32px;
+  padding: 32px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.10);
+}
+
+.frame-204-dark {
+  background: #1F1B29;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.10);
+}
+ 
+.frame-206 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.form1-frame206 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form2-frame206 {
+  display: flex;
+  height: 96px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;  
+}
+
+.input-inner-box {
+  border: none;
+  background: var(--gray-600, #FAFAFA);
+  color: var(--gray-200, #BAB9BD);
+}
+
+.input-inner-box-dark {
+background: var(--gray-25, #2E2A36);  
+}
+
+.input-outside-box {
+  
+}
+
+::placeholder {
+  display: flex;
+  padding: 12px 14px 12px 12px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.input-label1-title-div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; 
+}
+
+.input-label1-title {
+  color: var(--dark-purple-100, #130F1C);
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */  
+}
+
+.input-label1-title-dark {
+  color: var(--gray-200, #BAB9BD); 
+}
+
+.sign-in-button1 {
+  display: flex;
+  padding: 12px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: var(--purple-100, #651FFF);
+  border: none;
+}
+
+.sign-in-button1-text-box {
+  display: flex;
+  // align-items: flex-start;
+  // gap: 10px;  
+}
+
+.sign-in-button1-text-box p {
+  color: var(--White, #FFF);
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */  
+}
+
+.link1-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px; 
+  align-items: center;
+}
+
+.link1-text {
+  color: var(--purple-100, #651FFF);
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-decoration-line: underline; 
+}
+
+.rectangle1 {
+  height: 2px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--gray-400, #ECECEE);  
+}
+
+.frame-208 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.frame-208 p {
+  color: var(--gray-50, #5A5761);
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */  
+}
+
+.frame-207 {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.fang-button {
+  display: flex;
+  padding: 12px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0; 
+  border-radius: 5px;
+  border: 1px solid var(--gray-400, #ECECEE);
+  background: var(--White, #FFF);
+}
+
+.fang-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.subscribe-to-news-switch-box {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  top: 180px;
+  align-items: center;
+}
+
+.subscribe-to-news-text {
+  color: var(--gray-100, #484848);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */ 
+}
+
+.orange-switch-icon {
+  width: 28px;
+  height: 16px;  
+}
