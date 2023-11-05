@@ -25,22 +25,22 @@
                 <div class="frame-206">
                     <div class="form1-frame206">
                         <div class="input-label1-title-div">
-                            <label class="input-label1-title">
+                            <label for="text-input" class="input-label1-title">
                                 Input Label
                             </label>
                         </div>
                         <div class="input-outside-box">
-                            <input class="input-inner-box" type="text" placeholder="Placeholder Text">
+                            <input class="input-inner-box" id="text-input" type="text" placeholder="Placeholder Text" required>
                         </div>
                     </div>
                     <div class="form2-frame206">
                         <div class="input-label1-title-div">
-                            <label class="input-label1-title">
+                            <label for="password-input" class="input-label1-title">
                                 Input Label
                             </label>
                         </div>
                         <div class="input-outside-box">
-                            <input class="input-inner-box" type="password" placeholder="Placeholder Text">
+                            <input class="input-inner-box" type="password" id="password-input" placeholder="Placeholder Text" required>
                         </div>
                     </div>
                 </div>
@@ -140,22 +140,22 @@
                     <div class="frame-contact-223">
                         <div class="form1-frame206">
                             <div class="input-label1-title-div">
-                                <label class="input-label1-title">
+                                <label for="date-input" class="input-label1-title">
                                     Input Label
                                 </label>
                             </div>
                             <div class="input-outside-box">
-                                <input class="input-inner-box" type="text" placeholder="Placeholder Text">
+                                <input class="input-inner-box" id="date-input" type="text" placeholder="Placeholder Text" required>
                             </div>
                         </div>
                         <div class="form1-frame206">
                             <div class="input-label1-title-div">
-                                <label class="input-label1-title ">
+                                <label for="email-input" class="input-label1-title ">
                                     Input Label
                                 </label>
                             </div>
                             <div class="input-outside-box">
-                                <input class="input-inner-box" type="text" placeholder="Placeholder Text">
+                                <input class="input-inner-box" id="email-input" type="text" placeholder="Placeholder Text" required>
                             </div>
                         </div>
                     </div>
@@ -318,12 +318,16 @@
                         <div class="frame-contact-223">
                             <div class="form1-frame206">
                                 <div class="input-label1-title-div">
-                                    <label class="input-label1-title">
+                                    <label for="select-field" class="input-label1-title">
                                         Input Label
                                     </label>
                                 </div>
                                 <div class="input-outside-box">
-                                    <input class="input-inner-box" type="text" placeholder="Placeholder Text">
+                                    <select id="select-field" class="input-inner-box" required>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form1-frame206">
@@ -599,19 +603,19 @@
         <!-- Dark Checkout Form -->
         <div class="checkout-frame-209 checkout-frame-209-dark">
             <div class="frame-checkout-205 frame-checkout-205-dark">
-                <div class="heading-contact-204">
-                    <p class="contact-204-title">Checkout</p>
+                <div class="heading-contact-204 heading-contact-204-dark">
+                    <p class="contact-204-title contact-204-title-dark">Checkout</p>
                 </div>
                 <div class="checkout-frame-241">
                     <div class="checkout-frame-238">
                         <div class="your-order-text-box">
-                            <p class="your-order-text">Your Order</p>
+                            <p class="your-order-text your-order-text-dark">Your Order</p>
                         </div>
                         <div class="checkout-frame-237">
                             <div class="invisible-checkout-image"></div>
                             <div class="checkout-frame-235">
                                 <div class="checkout-item-text-box">
-                                    <p class="checkout-item-text">Eggshell Plant Pot</p>
+                                    <p class="checkout-item-text checkout-item-text-dark">Eggshell Plant Pot</p>
                                 </div>
                                 <div class="checkout-item-text-box">
                                     <p class="checkout-info-text">Size: Medium</p>
@@ -627,12 +631,12 @@
                     </div>
                     <div class="checkout-frame-240">
                         <div class="checkout-frame-240-text-box">
-                            <p class="checkout-frame-240-text">Delivery Details</p>
+                            <p class="checkout-frame-240-text checkout-frame-240-text-dark">Delivery Details</p>
                         </div>
                         <div class="checkout-frame-239">
                             <div class="checkout-frame-230">
                                 <div class="checkout-frame-230-text-box">
-                                    <p class="checkout-frame-230-name">Adam Sandler</p>
+                                    <p class="checkout-frame-230-name checkout-frame-230-name-dark">Adam Sandler</p>
                                 </div>
                                 <div class="checkout-frame-230-text-box">
                                     <p class="checkout-frame-230-address">1234 Fake St</p>
@@ -643,7 +647,7 @@
                             </div>
                             <div class="checkout-frame-231">
                                 <div class="checkout-frame-230-text-box">
-                                    <p class="checkout-frame-230-name">Shipping Speed</p>
+                                    <p class="checkout-frame-230-name checkout-frame-230-name-dark">Shipping Speed</p>
                                 </div>
                                 <div class="checkout-frame-230-text-box">
                                     <p class="checkout-frame-230-address">$7.00 No Rush Shipping</p>
@@ -657,15 +661,15 @@
                 </div>
                 <div class="checkout-frame-234">
                     <div class="checkout-frame-234-heading-box">
-                        <p class="checkout-frame-234-heading">Payment Method</p>
+                        <p class="checkout-frame-234-heading checkout-frame-234-heading-dark">Payment Method</p>
                     </div>
                     <div class="checkout-frame-224">
                         <div class="checkout-frame-224-input-box-large">
                             <div class="frame-224-input-box-large-text-box">
-                                <p class="frame-224-input-box-large-text">Input Label</p>
+                                <p class="frame-224-input-box-large-text frame-224-input-box-large-text-dark">Input Label</p>
                             </div>
-                            <div class="checkout-frame-126">
-                                <div class="checkout-frame-126-text-box">
+                            <div class="checkout-frame-126 checkout-frame-126-dark">
+                                <div class="checkout-frame-126-text-box checkout-frame-126-text-box-dark">
                                     <p class="checkout-frame-126-text">Placeholder Text</p>
                                 </div>
                             </div>
@@ -674,7 +678,7 @@
                             <div class="frame-224-input-box-text-box">
                                 <p class="frame-224-input-box-text">Input Label</p>
                             </div>
-                            <div class="checkout-frame-126-small">
+                            <div class="checkout-frame-126-small checkout-frame-126-small-dark">
                                 <div class="checkout-frame-126-text-box-small">
                                     <p class="checkout-frame-126-text-small">Placeholder Text</p>
                                 </div>
@@ -684,7 +688,7 @@
                             <div class="frame-224-input-box-text-box">
                                 <p class="frame-224-input-box-text">Input Label</p>
                             </div>
-                            <div class="checkout-frame-126-small">
+                            <div class="checkout-frame-126-small checkout-frame-126-small-dark">
                                 <div class="checkout-frame-126-text-box-small">
                                     <p class="checkout-frame-126-text-small">Placeholder Text</p>
                                 </div>
